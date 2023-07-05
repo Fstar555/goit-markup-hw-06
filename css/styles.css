@@ -66,6 +66,7 @@ img {
   padding: 24px 0 24px 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  z-index: 15;
 }
 
 .header-navigation-list {
@@ -81,8 +82,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
-  display: flex;
-  margin-right: 76px;
 }
 
 .header-logo-web {
@@ -255,11 +254,12 @@ img {
 
 .business-info {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
 }
 
 .business-title-item {
-  width: 264px;
+  width: 100%;
 }
 
 .business-title-item > h3 {
@@ -267,16 +267,17 @@ img {
 }
 
 .business-info-strategy {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--dark-color);
   margin-bottom: 8px;
 }
 
 .business-info-idea {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
