@@ -325,7 +325,6 @@ img {
 /*-----------------Team------------------*/
 
 .team {
-  background-color: var(--third-title-color);
   padding: 120px 0;
 }
 
@@ -378,9 +377,8 @@ img {
 
 .social-icon-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .social-link {
