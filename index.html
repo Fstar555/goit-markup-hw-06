@@ -27,7 +27,7 @@
           <a href="./index.html" class="header-logo link"
             >Web<span class="header-logo-web">Studio</span></a
           >
-          <ul class="header-menu list">
+          <ul class="header-menu list d-md-flex">
             <li class="header-menu-item">
               <a href="./index.html" class="header-menu-link link current"
                 >Studio</a
@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <address class="header-contacts">
+        <address class="header-contacts d-md-flex">
           <ul class="header-contacts-item list">
             <li>
               <a
@@ -59,6 +59,9 @@
             </li>
           </ul>
         </address>
+        <button class="d-sm-block">
+          -
+        </button>
       </div>
     </header>
 
@@ -71,12 +74,13 @@
           </button>
         </div>
       </section>
+
       <section class="business">
         <div class="container-business container">
           <h2 class="visually-hidden">info</h2>
           <ul class="business-info list">
             <li class="business-title-item">
-              <div class="business-icon-box">
+              <div class="business-icon-box d-md-block">
                 <svg class="svg-business" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
@@ -88,7 +92,7 @@
               </p>
             </li>
             <li class="business-title-item">
-              <div class="business-icon-box">
+              <div class="business-icon-box d-md-block">
                 <svg class="svg-business" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -100,7 +104,7 @@
               </p>
             </li>
             <li class="business-title-item">
-              <div class="business-icon-box">
+              <div class="business-icon-box d-md-block">
                 <svg class="svg-business" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -112,7 +116,7 @@
               </p>
             </li>
             <li class="business-title-item">
-              <div class="business-icon-box">
+              <div class="business-icon-box d-md-block">
                 <svg class="svg-business" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -122,38 +126,6 @@
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="our-job">
-        <div class="container-our-job container">
-          <h2 class="our-job-title">What are we doing</h2>
-          <ul class="our-job-list list">
-            <li class="our-job-item">
-              <img
-                src="./images/image_1.jpg"
-                alt="Workspace1"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="our-job-item">
-              <img
-                src="./images/image_2.jpg"
-                alt="Workspace2"
-                width="360"
-                height="300"
-              />
-            </li>
-            <li class="our-job-item">
-              <img
-                src="./images/image_3.jpg"
-                alt="Workspace3"
-                width="360"
-                height="300"
-              />
             </li>
           </ul>
         </div>
@@ -338,53 +310,191 @@
         </div>
       </section>
 
-      <section class="customers">
-        <div class="container">
-          <h2 class="customers-title">Customers</h2>
-          <ul class="customers-title-list list">
-            <li class="customers-tittle-item">
-              <a href="" class="customers-link link">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Client-1"></use>
-                </svg>
+      <section class="portfolio">
+        <div class="container-portfolio container">
+<!--          <h1 class="visually-hidden">Filter</h1>-->
+<!--          <ul class="filter-list list">-->
+<!--            <li><button type="button" class="button">All</button></li>-->
+<!--            <li><button type="button" class="button">Web Site</button></li>-->
+<!--            <li><button type="button" class="button">App</button></li>-->
+<!--            <li><button type="button" class="button">Design</button></li>-->
+<!--            <li><button type="button" class="button">Marketing</button></li>-->
+<!--          </ul>-->
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <a href="" class="app-item link">
+                <div class="app-cover-block">
+                  <img
+                      srcset="
+                      ./images/portfolio-mobile/img1-mob-por.jpg     288w,
+                      ./images/portfolio-mobile/img1-mob-port@2x.jpg 576w,
+                      ./images/portfolio-tablet/img1-tab-port.jpg    356w,
+                      ./images/portfolio-tablet/img1-tab-port@2x.jpg 712w,
+                      ./images/portfolio_1.jpg                       360w,
+                      ./images/portfolio_1@2x.jpg                    720w
+                    "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px,"
+                      src="./images/portfolio_1.jpg"
+                      alt="Open pages of the bank's app"
+                      class="portfolio-img"
+                  />
+                  <p class="app-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="app-box">
+                  <h2 class="portfolio-name">Banking App Interface Concept</h2>
+                  <p class="portfolio-type">App</p>
+                </div>
               </a>
             </li>
-            <li class="customers-tittle-item">
-              <a href="" class="customers-link link">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Client-2"></use>
-                </svg>
+            <li class="portfolio-item">
+              <a href="" class="app-item link">
+                <div class="app-cover-block">
+                  <img
+                      srcset="
+                      ./images/portfolio-mobile/img2-mob-port.jpg    288w,
+                      ./images/portfolio-mobile/img2-mob-port@2x.jpg 576w,
+                      ./images/portfolio-tablet/img2-tab-port.jpg    356w,
+                      ./images/portfolio-tablet/img2-tab-port@2x.jpg 712w,
+                      ./images/portfolio_2.jpg                       360w,
+                      ./images/portfolio_2@2x.jpg                    720w
+                    "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px,"
+                      src="./images/portfolio_2.jpg"
+                      alt="Pay by phone via QR code"
+                      class="portfolio-img"
+                  />
+                  <p class="app-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="app-box">
+                  <h2 class="portfolio-name">Cashless Payment</h2>
+                  <p class="portfolio-type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li class="customers-tittle-item">
-              <a href="" class="customers-link link">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo"></use>
-                </svg>
+            <li class="portfolio-item">
+              <a href="" class="app-item link">
+                <div class="app-cover-block">
+                  <img
+                      srcset="
+                      ./images/portfolio-mobile/img3-mob-port.jpg    288w,
+                      ./images/portfolio-mobile/img3-mob-port@2x.jpg 576w,
+                      ./images/portfolio-tablet/img3-tab-port.jpg    356w,
+                      ./images/portfolio-tablet/img3-tab-port@2x.jpg 712w,
+                      ./images/portfolio_3.jpg                       360w,
+                      ./images/portfolio_3@2x.jpg                    720w
+                    "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px,"
+                      src="./images/portfolio_3.jpg"
+                      alt="Open website on a computer and app"
+                      class="portfolio-img"
+                  />
+                  <p class="app-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="app-box">
+                  <h2 class="portfolio-name">Meditation App</h2>
+                  <p class="portfolio-type">App</p>
+                </div>
               </a>
             </li>
-            <li class="customers-tittle-item">
-              <a href="" class="customers-link link">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Client-4"></use>
-                </svg>
+            <li class="portfolio-item">
+              <a href="" class="app-item link">
+                <div class="app-cover-block">
+                  <img
+                      srcset="
+                      ./images/portfolio-mobile/img4-mob-port.jpg    288w,
+                      ./images/portfolio-mobile/img4-mob-port@2x.jpg 576w,
+                      ./images/portfolio-tablet/img4-tab-port.jpg    356w,
+                      ./images/portfolio-tablet/img4-tab-port@2x.jpg 712w,
+                      ./images/portfolio_4.jpg                       360w,
+                      ./images/portfolio_4@2x.jpg                    720w
+                    "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px,"
+                      src="./images/portfolio_4.jpg"
+                      alt="Using app at the taxi"
+                      class="portfolio-img"
+                  />
+                  <p class="app-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="app-box">
+                  <h2 class="portfolio-name">Taxi Service</h2>
+                  <p class="portfolio-type">Marketing</p>
+                </div>
               </a>
             </li>
-            <li class="customers-tittle-item">
-              <a href="" class="customers-link link">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Client-5"></use>
-                </svg>
+            <li class="portfolio-item">
+              <a href="" class="app-item link">
+                <div class="app-cover-block">
+                  <img
+                      srcset="
+                      ./images/portfolio-mobile/img5-mob-port.jpg    288w,
+                      ./images/portfolio-mobile/img5-mob-port@2x.jpg 576w,
+                      ./images/portfolio-tablet/img5-tab-port.jpg    356w,
+                      ./images/portfolio-tablet/img5-tab-port@2x.jpg 712w,
+                      ./images/portfolio_5.jpg                       360w,
+                      ./images/portfolio_5@2x.jpg                    720w
+                    "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px,"
+                      src="./images/portfolio_5.jpg"
+                      alt="Mobile screen illustrations "
+                      class="portfolio-img"
+                  />
+                  <p class="app-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="app-box">
+                  <h2 class="portfolio-name">Screen Illustrations</h2>
+                  <p class="portfolio-type">Design</p>
+                </div>
               </a>
             </li>
-            <li class="customers-tittle-item">
-              <a href="" class="customers-link link">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Client-6"></use>
-                </svg>
+            <li class="portfolio-item">
+              <a href="" class="app-item link">
+                <div class="app-cover-block">
+                  <img
+                      srcset="
+                      ./images/portfolio-mobile/img6-mob-port.jpg    288w,
+                      ./images/portfolio-mobile/img6-mob-port@2x.jpg 576w,
+                      ./images/portfolio-tablet/img6-tab-port.jpg    356w,
+                      ./images/portfolio-tablet/img6-tab-port@2x.jpg 712w,
+                      ./images/portfolio_6.jpg                       360w,
+                      ./images/portfolio_6@2x.jpg                    720w
+                    "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px,"
+                      src="./images/portfolio_6.jpg"
+                      alt="The girl studies online"
+                      class="portfolio-img"
+                  />
+                  <p class="app-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="app-box">
+                  <h2 class="portfolio-name">Online Courses</h2>
+                  <p class="portfolio-type">Marketing</p>
+                </div>
               </a>
             </li>
-          </ul>
         </div>
       </section>
     </main>
