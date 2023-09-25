@@ -56,6 +56,32 @@ img {
   margin: 0 auto;
   // outline: 2px solid;
 }
+
+/*------.container {
+  width: 100%;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1140px;
+  }
+}*/
+
 /*-------------Header-----------*/
 
 .container-header {
@@ -79,7 +105,7 @@ img {
 
 .header-logo {
   font-family: var(--logo-style);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -324,7 +350,6 @@ img {
   gap: 24px;
 }
 
-
 .our-job-item {
   width: calc((100% - 48px) / 3);
 }
@@ -361,7 +386,7 @@ img {
   background-color: var(--white-background-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 @media (min-width: 768px) {
@@ -507,7 +532,7 @@ img {
   align-items: baseline;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .container-footer {
     flex-direction: row;
   }
