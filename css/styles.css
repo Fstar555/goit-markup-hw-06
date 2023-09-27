@@ -613,11 +613,16 @@ img {
 }
 
 .container-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .container-footer {
+    width: 584px;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -732,6 +737,11 @@ img {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form {
+  flex-direction: row;
+}
+
 .footer-label {
 }
 
@@ -835,6 +845,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -895,8 +906,7 @@ img {
 }
 
 .portfolio-item {
-  margin-right: 24px;
-  margin-bottom: 48px;
+  gap: 24px;
   position: relative;
   overflow: hidden;
 }
