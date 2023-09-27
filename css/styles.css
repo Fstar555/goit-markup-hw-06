@@ -352,7 +352,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .business-info {
-  gap: 72px 24px;
+    gap: 72px 24px;
   }
 }
 
@@ -360,13 +360,12 @@ img {
   width: 100%;
 }
 
-
 @media screen and (min-width: 768px) {
   .business-title-item {
-  gap: 72px 24px;
-  width: calc((100% - 56px) / 2);
-
-
+    gap: 72px 24px;
+    width: calc((100% - 56px) / 2);
+  }
+}
 
 .business-title-item > h3 {
   padding-bottom: 8px;
@@ -483,7 +482,7 @@ img {
   }
 }
 
-@media screen and  (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .team-title-list {
     max-width: none;
   }
@@ -821,6 +820,17 @@ img {
   padding-bottom: 120px;
 }
 
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -830,7 +840,15 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-list {
     flex-direction: row;
+    gap: 24px;
+  }
+}
 
+@charsetmedia screen and (min-width: 1158px) {
+  .portfolio-list {
+    flex-direction: row;
+    gap: 24px;
+    width: calc ((100% - 360px) /3);
   }
 }
 
