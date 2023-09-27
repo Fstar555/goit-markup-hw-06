@@ -195,7 +195,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .header-contacts-item {
     display: flex;
     flex-direction: row;
@@ -371,6 +371,7 @@ img {
   .business-title-item {
     gap: 24px;
     width: calc((100% - 384px) / 4);
+  justify-content: space-between;
 }
 
 
