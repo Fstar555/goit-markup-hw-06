@@ -54,7 +54,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  // outline: 2px solid;
+  /*outline: 2px solid;*/
 }
 
 /*------.container {
@@ -92,7 +92,6 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0 24px 0;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 15;
@@ -259,10 +258,10 @@ img {
   background-position: center;
   background-size: cover;
   /*background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  );
-  url(../images/hero_bgr_img.jpg);*/
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero_bgr_img.jpg);*/
 }
 
 @media screen and (min-width: 768px) {
@@ -368,6 +367,7 @@ img {
 @media screen and (min-width: 1158px) {
   .business-info {
     flex-wrap: nowrap;
+    align-items: center;
   }
 }
 
@@ -396,13 +396,14 @@ img {
 
 /*.svg-business {
   display: none;
-}
+}*/
 
 @media screen and (min-width: 1158px) {
   .svg-business {
-    display: ;
+    display: flex;
+    align-items: center;
   }
- */
+}
 
 .business-info-strategy {
   font-size: 36px;
@@ -533,6 +534,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-bottom: 8px;
 }
 
 .employee-item {
@@ -651,8 +653,8 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container-footer {
-    flex-direction: row;
-    align-items: baseline;
+    width: 1158px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -660,6 +662,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-box {
+    margin-right: 156px;
+  }
 }
 
 .footer-logo {
@@ -718,6 +726,12 @@ img {
   gap: 16px;
   margin-bottom: 72px;
   justify-content: center;
+}
+
+@media screen and (min-width: 1158px) {
+  .social-footer-list {
+    margin-bottom: 132px;
+  }
 }
 
 .social-footer-item {
@@ -779,8 +793,11 @@ img {
   }
 }
 
-.footer-label {
-}
+/*@media screen and (min-width: 1158px) {
+  .footer-label {
+    gap: 80px;
+  }
+}*/
 
 .footer-input {
   display: block;
@@ -1285,9 +1302,17 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .d-sm-block {
+    display: none;
+  }
+  .d-md-flex {
+    display: flex;
+}
+
 @media screen and (min-width: 1158px) {
   .d-md-block {
-    display: block;
+    display: flex;
   }
   .d-sm-block {
     display: none;
